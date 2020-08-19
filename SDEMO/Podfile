@@ -1,0 +1,25 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '10.0'
+use_frameworks!
+
+target 'SDEMO' do
+
+    #响应式框架
+    pod 'RxSwift', '~> 5.0'
+    pod 'RxCocoa', '~> 5.0'
+
+    #布局
+    pod 'SnapKit', '~> 5.0.0'
+    #图片
+    #pod 'Kingfisher', '~> 4.7.0'
+
+    #pod 'SDWebImage', '~> 4.0' 
+
+#网络
+#pod 'Alamofire', '~> 5.2'
+#JSON 解析
+#pod 'ObjectMapper', '~> 3.1.0'
+ 
+end
+
+ 
