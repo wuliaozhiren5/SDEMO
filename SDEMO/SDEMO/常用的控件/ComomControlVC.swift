@@ -1,32 +1,37 @@
 //
-//  ViewController.swift
+//  ComomControlVC.swift
 //  SDEMO
 //
-//  Created by rrtv on 2020/8/19.
+//  Created by rrtv on 2020/8/20.
 //  Copyright © 2020 tv. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class ComomControlVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-//        self.view.addSubview(lazyLabel);
+        self.view.backgroundColor = UIColor.white
+        self.view.addSubview(lazyLabel);
         self.view.addSubview(lazyButton);
-//        self.view.addSubview(lazyImageView);
-   
-        
+        self.view.addSubview(lazyImageView);
         //        btn.snp.makeConstraints { (make) in
         //                 make.center.equalTo(self.view)
         //                 make.size.equalTo(CGSize(width: 100, height: 100))
         //             }
         
     }
- 
-
-     
+    
+    //    lazy var tableView: UITableView = {
+    //        let tempTableView = UITableView (frame: self.view.bounds, style: .plain)
+    //        tempTableView.delegate = self
+    //        tempTableView.dataSource = self
+    //        tempTableView.register(UITableViewCell.self, forCellReuseIdentifier: cellID)
+    //        return tempTableView
+    //    }()
+    
     //懒加载lazy
     lazy var lazyLabel: UILabel = {
         let label = UILabel.init(frame: CGRect(x: 0, y: 100, width: 200, height: 50))
@@ -84,31 +89,25 @@ class ViewController: UIViewController {
         btn.imageEdgeInsets = UIEdgeInsets.init(top: 0, left: 10, bottom: 0, right: 0)
         
         //点击
-//        btn.addTarget(self, action: #selector(buttonClick1), for: .touchUpInside)
+        btn.addTarget(self, action: #selector(buttonClick1), for: .touchUpInside)
         btn.addTarget(self, action: #selector(buttonClick2(button01:)), for: .touchUpInside)
         //btn.addTarget(self, action: #selector(switchTypeAction), for: .touchUpInside)
         
         return btn
     }()
- 
+    
     //    @objc func switchTypeAction(_ sender:UIButton?) {
     //        print("btn");
     //    }
     
-//    @objc func buttonClick1 ()  {
-//        print("你点击了我这个按钮方法buttonClick1");
-//    }
+    @objc func buttonClick1 ()  {
+        print("你点击了我这个按钮方法buttonClick1");
+    }
     
     @objc func buttonClick2 (button01:UIButton) {
-//        let vc : ComomControlVC = ComomControlVC()
-        let vc : TVC = TVC()
-//        let vc : CVC = CVC()
-        vc.tableTitle = "12312"
-        self.navigationController?.pushViewController(vc, animated: true)
-
         print("你点击了我这个按钮方法buttonClick2(buttonMy:)");
+        
     }
 }
 
 
- 

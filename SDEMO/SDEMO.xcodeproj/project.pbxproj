@@ -16,6 +16,14 @@
 		F57BF07824ECC39100BED6E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F57BF07624ECC39100BED6E1 /* LaunchScreen.storyboard */; };
 		F57BF08324ECC39200BED6E1 /* SDEMOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57BF08224ECC39200BED6E1 /* SDEMOTests.swift */; };
 		F57BF08E24ECC39200BED6E1 /* SDEMOUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57BF08D24ECC39200BED6E1 /* SDEMOUITests.swift */; };
+		F5ECE54124EE5B1B008A5D11 /* 变量常量.md in Resources */ = {isa = PBXBuildFile; fileRef = F5ECE54024EE5B1B008A5D11 /* 变量常量.md */; };
+		F5ECE54324EE5BE7008A5D11 /* ComomControlVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5ECE54224EE5BE7008A5D11 /* ComomControlVC.swift */; };
+		F5ECE54624EE5F35008A5D11 /* TVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5ECE54524EE5F35008A5D11 /* TVC.swift */; };
+		F5ECE54824EE5F44008A5D11 /* CVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5ECE54724EE5F44008A5D11 /* CVC.swift */; };
+		F5ECE54A24EE613F008A5D11 /* TCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5ECE54924EE613F008A5D11 /* TCell.swift */; };
+		F5ECE54C24EE6156008A5D11 /* CCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5ECE54B24EE6156008A5D11 /* CCell.swift */; };
+		F5ECE55124EE776F008A5D11 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5ECE55024EE776F008A5D11 /* Person.swift */; };
+		F5ECE55524EE8295008A5D11 /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5ECE55424EE8295008A5D11 /* Enum.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +60,14 @@
 		F57BF08924ECC39200BED6E1 /* SDEMOUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SDEMOUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F57BF08D24ECC39200BED6E1 /* SDEMOUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDEMOUITests.swift; sourceTree = "<group>"; };
 		F57BF08F24ECC39200BED6E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5ECE54024EE5B1B008A5D11 /* 变量常量.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "变量常量.md"; sourceTree = "<group>"; };
+		F5ECE54224EE5BE7008A5D11 /* ComomControlVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComomControlVC.swift; sourceTree = "<group>"; };
+		F5ECE54524EE5F35008A5D11 /* TVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVC.swift; sourceTree = "<group>"; };
+		F5ECE54724EE5F44008A5D11 /* CVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVC.swift; sourceTree = "<group>"; };
+		F5ECE54924EE613F008A5D11 /* TCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCell.swift; sourceTree = "<group>"; };
+		F5ECE54B24EE6156008A5D11 /* CCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCell.swift; sourceTree = "<group>"; };
+		F5ECE55024EE776F008A5D11 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		F5ECE55424EE8295008A5D11 /* Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
 		FA5969552E371CA1D0E2DE9D /* Pods-SDEMO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDEMO.debug.xcconfig"; path = "Target Support Files/Pods-SDEMO/Pods-SDEMO.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -123,6 +139,11 @@
 		F57BF06A24ECC39100BED6E1 /* SDEMO */ = {
 			isa = PBXGroup;
 			children = (
+				F5ECE54F24EE770A008A5D11 /* 枚举enum */,
+				F5ECE54E24EE7703008A5D11 /* 结构体struct */,
+				F5ECE54D24EE7701008A5D11 /* 类class */,
+				F5ECE54424EE5BEF008A5D11 /* 常用的控件 */,
+				F5ECE53D24EE5A65008A5D11 /* 变量常量 */,
 				F57BF0A524ED555600BED6E1 /* CollectionView */,
 				F57BF0A424ED555300BED6E1 /* TableView */,
 				F57BF06B24ECC39100BED6E1 /* AppDelegate.swift */,
@@ -157,6 +178,8 @@
 		F57BF0A424ED555300BED6E1 /* TableView */ = {
 			isa = PBXGroup;
 			children = (
+				F5ECE54524EE5F35008A5D11 /* TVC.swift */,
+				F5ECE54924EE613F008A5D11 /* TCell.swift */,
 			);
 			path = TableView;
 			sourceTree = "<group>";
@@ -164,8 +187,49 @@
 		F57BF0A524ED555600BED6E1 /* CollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				F5ECE54724EE5F44008A5D11 /* CVC.swift */,
+				F5ECE54B24EE6156008A5D11 /* CCell.swift */,
 			);
 			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		F5ECE53D24EE5A65008A5D11 /* 变量常量 */ = {
+			isa = PBXGroup;
+			children = (
+				F5ECE54024EE5B1B008A5D11 /* 变量常量.md */,
+			);
+			path = "变量常量";
+			sourceTree = "<group>";
+		};
+		F5ECE54424EE5BEF008A5D11 /* 常用的控件 */ = {
+			isa = PBXGroup;
+			children = (
+				F5ECE54224EE5BE7008A5D11 /* ComomControlVC.swift */,
+			);
+			path = "常用的控件";
+			sourceTree = "<group>";
+		};
+		F5ECE54D24EE7701008A5D11 /* 类class */ = {
+			isa = PBXGroup;
+			children = (
+				F5ECE55024EE776F008A5D11 /* Person.swift */,
+			);
+			path = "类class";
+			sourceTree = "<group>";
+		};
+		F5ECE54E24EE7703008A5D11 /* 结构体struct */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "结构体struct";
+			sourceTree = "<group>";
+		};
+		F5ECE54F24EE770A008A5D11 /* 枚举enum */ = {
+			isa = PBXGroup;
+			children = (
+				F5ECE55424EE8295008A5D11 /* Enum.swift */,
+			);
+			path = "枚举enum";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,6 +338,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5ECE54124EE5B1B008A5D11 /* 变量常量.md in Resources */,
 				F57BF07824ECC39100BED6E1 /* LaunchScreen.storyboard in Resources */,
 				F57BF07524ECC39100BED6E1 /* Assets.xcassets in Resources */,
 				F57BF07324ECC39100BED6E1 /* Main.storyboard in Resources */,
@@ -343,8 +408,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5ECE54A24EE613F008A5D11 /* TCell.swift in Sources */,
+				F5ECE54C24EE6156008A5D11 /* CCell.swift in Sources */,
+				F5ECE54324EE5BE7008A5D11 /* ComomControlVC.swift in Sources */,
 				F57BF07024ECC39100BED6E1 /* ViewController.swift in Sources */,
+				F5ECE55524EE8295008A5D11 /* Enum.swift in Sources */,
+				F5ECE55124EE776F008A5D11 /* Person.swift in Sources */,
+				F5ECE54824EE5F44008A5D11 /* CVC.swift in Sources */,
 				F57BF06C24ECC39100BED6E1 /* AppDelegate.swift in Sources */,
+				F5ECE54624EE5F35008A5D11 /* TVC.swift in Sources */,
 				F57BF06E24ECC39100BED6E1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
