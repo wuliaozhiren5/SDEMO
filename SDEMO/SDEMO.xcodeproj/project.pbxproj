@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -95,7 +95,6 @@
 				FA5969552E371CA1D0E2DE9D /* Pods-SDEMO.debug.xcconfig */,
 				C9F29AE68130F01485959073 /* Pods-SDEMO.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -124,6 +123,8 @@
 		F57BF06A24ECC39100BED6E1 /* SDEMO */ = {
 			isa = PBXGroup;
 			children = (
+				F57BF0A524ED555600BED6E1 /* CollectionView */,
+				F57BF0A424ED555300BED6E1 /* TableView */,
 				F57BF06B24ECC39100BED6E1 /* AppDelegate.swift */,
 				F57BF06D24ECC39100BED6E1 /* SceneDelegate.swift */,
 				F57BF06F24ECC39100BED6E1 /* ViewController.swift */,
@@ -151,6 +152,20 @@
 				F57BF08F24ECC39200BED6E1 /* Info.plist */,
 			);
 			path = SDEMOUITests;
+			sourceTree = "<group>";
+		};
+		F57BF0A424ED555300BED6E1 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		F57BF0A524ED555600BED6E1 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CollectionView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

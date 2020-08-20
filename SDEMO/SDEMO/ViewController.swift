@@ -31,12 +31,10 @@ class ViewController: UIViewController {
     //        tempTableView.register(UITableViewCell.self, forCellReuseIdentifier: cellID)
     //        return tempTableView
     //    }()
-    
-    
-    
+     
     //懒加载lazy
     lazy var lazyLabel: UILabel = {
-        let label = UILabel.init(frame: CGRect(x: 0, y: 100, width: 100, height: 50))
+        let label = UILabel.init(frame: CGRect(x: 0, y: 100, width: 200, height: 50))
         label.text = "lazy方式懒加载lable"
         //        label.frame = CGRect.init(x: 0, y: 0, width: 100, height: 50)
         label.textColor = UIColor.white
@@ -51,7 +49,7 @@ class ViewController: UIViewController {
     }()
     
     lazy var lazyImageView: UIImageView = {
-        let imageView = UIImageView.init(frame: CGRect(x: 0, y: 300, width: 100, height: 100))
+        let imageView = UIImageView.init(frame: CGRect(x: 0, y: 300, width: 200, height: 200))
         imageView.contentMode = .scaleAspectFit;
         imageView.image = UIImage(named: "ic_liveroom_addpeople")
         return imageView
@@ -59,7 +57,7 @@ class ViewController: UIViewController {
     
     lazy var lazyButton: UIButton = {
         let btn = UIButton.init()
-        btn.frame = CGRect(x: 0, y: 200, width: 100, height: 50)
+        btn.frame = CGRect(x: 0, y: 200, width: 200, height: 50)
         
         //文字
         btn.setTitle("普通状态", for: .normal)
