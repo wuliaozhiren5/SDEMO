@@ -32,19 +32,9 @@ class TVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //array
-        //        var someInts = [Int]()
-        //        print("someInts is of type [Int] with \(someInts.count) items.")
-        //        // 打印 "someInts is of type [Int] with 0 items."
-        //        someInts.append(3)
-        //        // someInts 现在包含一个 Int 值
-        //        someInts = []
-        //        // someInts 现在是空数组，但是仍然是 [Int] 类型的。
-        //
-        //
-        //        var shoppingList: [String] = ["Eggs", "Milk"]
-        //        // shoppingList 已经被构造并且拥有两个初始项。
-        ////        var shoppingList = ["Eggs", "Milk"]
+
+        
+        
         
         // Do any additional setup after loading the view.
         

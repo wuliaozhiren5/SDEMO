@@ -16,6 +16,7 @@
 		F57BF07824ECC39100BED6E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F57BF07624ECC39100BED6E1 /* LaunchScreen.storyboard */; };
 		F57BF08324ECC39200BED6E1 /* SDEMOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57BF08224ECC39200BED6E1 /* SDEMOTests.swift */; };
 		F57BF08E24ECC39200BED6E1 /* SDEMOUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57BF08D24ECC39200BED6E1 /* SDEMOUITests.swift */; };
+		F5A5339824EEA4AD003D0EAB /* 数组.md in Resources */ = {isa = PBXBuildFile; fileRef = F5A5339724EEA4AD003D0EAB /* 数组.md */; };
 		F5ECE54124EE5B1B008A5D11 /* 变量常量.md in Resources */ = {isa = PBXBuildFile; fileRef = F5ECE54024EE5B1B008A5D11 /* 变量常量.md */; };
 		F5ECE54324EE5BE7008A5D11 /* ComomControlVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5ECE54224EE5BE7008A5D11 /* ComomControlVC.swift */; };
 		F5ECE54624EE5F35008A5D11 /* TVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5ECE54524EE5F35008A5D11 /* TVC.swift */; };
@@ -60,6 +61,7 @@
 		F57BF08924ECC39200BED6E1 /* SDEMOUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SDEMOUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F57BF08D24ECC39200BED6E1 /* SDEMOUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDEMOUITests.swift; sourceTree = "<group>"; };
 		F57BF08F24ECC39200BED6E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5A5339724EEA4AD003D0EAB /* 数组.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "数组.md"; sourceTree = "<group>"; };
 		F5ECE54024EE5B1B008A5D11 /* 变量常量.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "变量常量.md"; sourceTree = "<group>"; };
 		F5ECE54224EE5BE7008A5D11 /* ComomControlVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComomControlVC.swift; sourceTree = "<group>"; };
 		F5ECE54524EE5F35008A5D11 /* TVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVC.swift; sourceTree = "<group>"; };
@@ -143,7 +145,7 @@
 				F5ECE54E24EE7703008A5D11 /* 结构体struct */,
 				F5ECE54D24EE7701008A5D11 /* 类class */,
 				F5ECE54424EE5BEF008A5D11 /* 常用的控件 */,
-				F5ECE53D24EE5A65008A5D11 /* 变量常量 */,
+				F5ECE53D24EE5A65008A5D11 /* 基本类型 */,
 				F57BF0A524ED555600BED6E1 /* CollectionView */,
 				F57BF0A424ED555300BED6E1 /* TableView */,
 				F57BF06B24ECC39100BED6E1 /* AppDelegate.swift */,
@@ -193,12 +195,13 @@
 			path = CollectionView;
 			sourceTree = "<group>";
 		};
-		F5ECE53D24EE5A65008A5D11 /* 变量常量 */ = {
+		F5ECE53D24EE5A65008A5D11 /* 基本类型 */ = {
 			isa = PBXGroup;
 			children = (
 				F5ECE54024EE5B1B008A5D11 /* 变量常量.md */,
+				F5A5339724EEA4AD003D0EAB /* 数组.md */,
 			);
-			path = "变量常量";
+			path = "基本类型";
 			sourceTree = "<group>";
 		};
 		F5ECE54424EE5BEF008A5D11 /* 常用的控件 */ = {
@@ -338,6 +341,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5A5339824EEA4AD003D0EAB /* 数组.md in Resources */,
 				F5ECE54124EE5B1B008A5D11 /* 变量常量.md in Resources */,
 				F57BF07824ECC39100BED6E1 /* LaunchScreen.storyboard in Resources */,
 				F57BF07524ECC39100BED6E1 /* Assets.xcassets in Resources */,
