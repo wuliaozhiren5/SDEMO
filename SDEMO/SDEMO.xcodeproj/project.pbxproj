@@ -17,6 +17,8 @@
 		F57BF08324ECC39200BED6E1 /* SDEMOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57BF08224ECC39200BED6E1 /* SDEMOTests.swift */; };
 		F57BF08E24ECC39200BED6E1 /* SDEMOUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57BF08D24ECC39200BED6E1 /* SDEMOUITests.swift */; };
 		F5A5339824EEA4AD003D0EAB /* 数组.md in Resources */ = {isa = PBXBuildFile; fileRef = F5A5339724EEA4AD003D0EAB /* 数组.md */; };
+		F5A5339A24EEA555003D0EAB /* Struct.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A5339924EEA555003D0EAB /* Struct.swift */; };
+		F5A5339C24EEA5DE003D0EAB /* Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A5339B24EEA5DE003D0EAB /* Class.swift */; };
 		F5ECE54124EE5B1B008A5D11 /* 变量常量.md in Resources */ = {isa = PBXBuildFile; fileRef = F5ECE54024EE5B1B008A5D11 /* 变量常量.md */; };
 		F5ECE54324EE5BE7008A5D11 /* ComomControlVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5ECE54224EE5BE7008A5D11 /* ComomControlVC.swift */; };
 		F5ECE54624EE5F35008A5D11 /* TVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5ECE54524EE5F35008A5D11 /* TVC.swift */; };
@@ -62,6 +64,8 @@
 		F57BF08D24ECC39200BED6E1 /* SDEMOUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDEMOUITests.swift; sourceTree = "<group>"; };
 		F57BF08F24ECC39200BED6E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5A5339724EEA4AD003D0EAB /* 数组.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "数组.md"; sourceTree = "<group>"; };
+		F5A5339924EEA555003D0EAB /* Struct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Struct.swift; sourceTree = "<group>"; };
+		F5A5339B24EEA5DE003D0EAB /* Class.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Class.swift; sourceTree = "<group>"; };
 		F5ECE54024EE5B1B008A5D11 /* 变量常量.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "变量常量.md"; sourceTree = "<group>"; };
 		F5ECE54224EE5BE7008A5D11 /* ComomControlVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComomControlVC.swift; sourceTree = "<group>"; };
 		F5ECE54524EE5F35008A5D11 /* TVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVC.swift; sourceTree = "<group>"; };
@@ -216,6 +220,7 @@
 			isa = PBXGroup;
 			children = (
 				F5ECE55024EE776F008A5D11 /* Person.swift */,
+				F5A5339B24EEA5DE003D0EAB /* Class.swift */,
 			);
 			path = "类class";
 			sourceTree = "<group>";
@@ -223,6 +228,7 @@
 		F5ECE54E24EE7703008A5D11 /* 结构体struct */ = {
 			isa = PBXGroup;
 			children = (
+				F5A5339924EEA555003D0EAB /* Struct.swift */,
 			);
 			path = "结构体struct";
 			sourceTree = "<group>";
@@ -412,10 +418,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5A5339C24EEA5DE003D0EAB /* Class.swift in Sources */,
 				F5ECE54A24EE613F008A5D11 /* TCell.swift in Sources */,
 				F5ECE54C24EE6156008A5D11 /* CCell.swift in Sources */,
 				F5ECE54324EE5BE7008A5D11 /* ComomControlVC.swift in Sources */,
 				F57BF07024ECC39100BED6E1 /* ViewController.swift in Sources */,
+				F5A5339A24EEA555003D0EAB /* Struct.swift in Sources */,
 				F5ECE55524EE8295008A5D11 /* Enum.swift in Sources */,
 				F5ECE55124EE776F008A5D11 /* Person.swift in Sources */,
 				F5ECE54824EE5F44008A5D11 /* CVC.swift in Sources */,
