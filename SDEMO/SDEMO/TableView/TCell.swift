@@ -11,19 +11,27 @@ import UIKit
 class TCell: UITableViewCell {
     
     lazy var firstNameLabel: UILabel = {
-        let nameLabel = UILabel.init(frame: CGRect(x: 0, y: 0, width: 200, height: 50))
-        nameLabel.text = ""
+        let label = UILabel.init(frame: CGRect(x: 0, y: 0, width: 200, height: 50))
+        label.text = ""
         //        label.textColor = UIColor.white
-        nameLabel.font = UIFont.systemFont(ofSize: 15)
-        return nameLabel
+        label.font = UIFont.systemFont(ofSize: 15)
+        return label
     }()
     
     lazy var lastNameLabel: UILabel = {
-        let nameLabel = UILabel.init(frame: CGRect(x: 0, y: 0, width: 200, height: 50))
-        nameLabel.text = ""
+        let label = UILabel.init(frame: CGRect(x: 0, y: 0, width: 200, height: 50))
+        label.text = ""
         //        label.textColor = UIColor.white
-        nameLabel.font = UIFont.systemFont(ofSize: 15)
-        return nameLabel
+        label.font = UIFont.systemFont(ofSize: 15)
+        return label
+    }()
+    
+    lazy var ageLabel: UILabel = {
+        let label = UILabel.init(frame: CGRect(x: 0, y: 0, width: 200, height: 50))
+        label.text = ""
+        //        label.textColor = UIColor.white
+        label.font = UIFont.systemFont(ofSize: 15)
+        return label
     }()
     
     lazy var avatarImageView: UIImageView = {
@@ -49,11 +57,12 @@ class TCell: UITableViewCell {
         self.contentView.addSubview(avatarImageView);
         self.contentView.addSubview(firstNameLabel);
         self.contentView.addSubview(lastNameLabel);
+        self.contentView.addSubview(ageLabel);
         
-//        avatarImageView.backgroundColor = UIColor.green;
-//        firstNameLabel.backgroundColor = UIColor.green;
-//        lastNameLabel.backgroundColor = UIColor.green;
-
+        //        avatarImageView.backgroundColor = UIColor.green;
+        //        firstNameLabel.backgroundColor = UIColor.green;
+        //        lastNameLabel.backgroundColor = UIColor.green;
+        
         avatarImageView.snp.makeConstraints { (make) in
             make.width.equalTo(50)
             make.height.equalTo(50)
@@ -62,20 +71,28 @@ class TCell: UITableViewCell {
             make.centerY.equalTo(self.contentView)
             
         }
+        
+        ageLabel.snp.makeConstraints { (make) in
+            make.trailing.equalTo(self.contentView.snp.trailing).offset(-10)
+            make.centerY.equalTo(self.contentView)
+        }
+        
         firstNameLabel.snp.makeConstraints { (make) in
             make.leading.equalTo(avatarImageView.snp.trailing).offset(10)
+            make.trailing.lessThanOrEqualTo(ageLabel.snp.leading).offset(-10)
             make.top.equalTo(avatarImageView.snp.top)
             make.height.equalTo(25)
         }
         lastNameLabel.snp.makeConstraints { (make) in
             make.leading.equalTo(avatarImageView.snp.trailing).offset(10)
+            make.trailing.lessThanOrEqualTo(ageLabel.snp.leading).offset(-10)
             make.bottom.equalTo(avatarImageView.snp.bottom)
             make.height.equalTo(25)
         }
+        
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
-    } 
-    
+    }
 }
