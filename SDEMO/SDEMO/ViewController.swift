@@ -14,6 +14,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
 //        self.view.addSubview(lazyLabel);
+        
+        //关闭导航栏半透明效果
+        self.navigationController?.navigationBar.isTranslucent = false
         self.view.addSubview(lazyButton);
 //        self.view.addSubview(lazyImageView);
    
@@ -22,13 +25,6 @@ class ViewController: UIViewController {
         //                 make.center.equalTo(self.view)
         //                 make.size.equalTo(CGSize(width: 100, height: 100))
         //             }
-        
-        let dictionary1 = ["key1": 888, "key2": 999]
-        let dictionary2: [String: Int] = ["key1": 888, "key2": 999]
-        
-//        var dictionary: [String:Int] = [:]
-//        var dictionary1 = ["key1": 55, "key2": 555]
-//        var dictionary2 = Dictionary<String, Int>()
     }
  
 
@@ -107,9 +103,10 @@ class ViewController: UIViewController {
     
     @objc func buttonClick2 (button01:UIButton) {
 //        let vc : ComomControlVC = ComomControlVC()
-        let vc : TVC = TVC()
-//        let vc : CVC = CVC()
-        vc.tableTitle = "12312"
+//        let vc : TVC = TVC()
+//        let vc : VerticalCVC = VerticalCVC()
+        let vc : HorizontalCVC = HorizontalCVC()
+
         self.navigationController?.pushViewController(vc, animated: true)
 
         print("你点击了我这个按钮方法buttonClick2(buttonMy:)");

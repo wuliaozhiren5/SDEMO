@@ -14,8 +14,6 @@ class TVC: UIViewController {
     let cellIdentity = "CellID"
     let TcellIdentity = "TCellID"
     
-    var tableTitle: String? =  ""
-    
     //简化后的天干地支：“甲、乙、丙、丁、戊、己、庚、辛、壬、癸”称为十天干，“子、丑、寅、卯、辰、巳、午、未、申、酉、戌、亥”称为十二地支。
     //    var data: [Person] = [Person.init(firstName: "甲", lastName: "111", age: 20, type: Season.Spring),
     //                          Person.init(firstName: "乙", lastName: "222", age: 21, type: Season.Summer),
@@ -38,6 +36,7 @@ class TVC: UIViewController {
         tempTableView.estimatedRowHeight = 0
         tempTableView.estimatedSectionHeaderHeight = 0;
         tempTableView.estimatedSectionFooterHeight = 0;
+        //cell
         tempTableView.register(UITableViewCell.self, forCellReuseIdentifier: cellIdentity)
         tempTableView.register(TCell.self, forCellReuseIdentifier: TcellIdentity)
         return tempTableView
@@ -62,6 +61,8 @@ class TVC: UIViewController {
         ]
         
         //UI
+        //关闭导航栏半透明效果
+        self.navigationController?.navigationBar.isTranslucent = false
         self.view.addSubview(tableView)
         tableView.snp.makeConstraints { (make) in
             make.edges.equalTo(self.view)
@@ -163,7 +164,7 @@ extension TVC: UITableViewDataSource {
             person = nil
         }
         
-        //system cell
+        //user cell
         let cell = tableView.dequeueReusableCell(withIdentifier: TcellIdentity, for: indexPath) as! TCell
         cell.accessoryType = .disclosureIndicator
         //        cell.textLabel?.text = "\(indexPath.section)" + "\(indexPath.row)"

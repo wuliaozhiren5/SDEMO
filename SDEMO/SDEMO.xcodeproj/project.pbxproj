@@ -12,6 +12,8 @@
 		F55819DC24EFB4D0001F1C25 /* 字符串.md in Resources */ = {isa = PBXBuildFile; fileRef = F55819DB24EFB4D0001F1C25 /* 字符串.md */; };
 		F55819E024EFB7C5001F1C25 /* HorizontalCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55819DF24EFB7C5001F1C25 /* HorizontalCVC.swift */; };
 		F55819E224EFB7E2001F1C25 /* VerticalCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55819E124EFB7E2001F1C25 /* VerticalCVC.swift */; };
+		F576FDA124EFC80700CA90BB /* HeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F576FDA024EFC80700CA90BB /* HeaderCollectionReusableView.swift */; };
+		F576FDA324EFC81500CA90BB /* FooterCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F576FDA224EFC81500CA90BB /* FooterCollectionReusableView.swift */; };
 		F57BF06C24ECC39100BED6E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57BF06B24ECC39100BED6E1 /* AppDelegate.swift */; };
 		F57BF06E24ECC39100BED6E1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57BF06D24ECC39100BED6E1 /* SceneDelegate.swift */; };
 		F57BF07024ECC39100BED6E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57BF06F24ECC39100BED6E1 /* ViewController.swift */; };
@@ -57,6 +59,8 @@
 		F55819DB24EFB4D0001F1C25 /* 字符串.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "字符串.md"; sourceTree = "<group>"; };
 		F55819DF24EFB7C5001F1C25 /* HorizontalCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalCVC.swift; sourceTree = "<group>"; };
 		F55819E124EFB7E2001F1C25 /* VerticalCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalCVC.swift; sourceTree = "<group>"; };
+		F576FDA024EFC80700CA90BB /* HeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCollectionReusableView.swift; sourceTree = "<group>"; };
+		F576FDA224EFC81500CA90BB /* FooterCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterCollectionReusableView.swift; sourceTree = "<group>"; };
 		F57BF06824ECC39100BED6E1 /* SDEMO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDEMO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F57BF06B24ECC39100BED6E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F57BF06D24ECC39100BED6E1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -221,6 +225,8 @@
 				F55819DD24EFB736001F1C25 /* 水平 */,
 				F5ECE54724EE5F44008A5D11 /* CVC.swift */,
 				F5ECE54B24EE6156008A5D11 /* CCell.swift */,
+				F576FDA024EFC80700CA90BB /* HeaderCollectionReusableView.swift */,
+				F576FDA224EFC81500CA90BB /* FooterCollectionReusableView.swift */,
 			);
 			path = CollectionView;
 			sourceTree = "<group>";
@@ -461,6 +467,8 @@
 				F5ECE54824EE5F44008A5D11 /* CVC.swift in Sources */,
 				F57BF06C24ECC39100BED6E1 /* AppDelegate.swift in Sources */,
 				F5ECE54624EE5F35008A5D11 /* TVC.swift in Sources */,
+				F576FDA124EFC80700CA90BB /* HeaderCollectionReusableView.swift in Sources */,
+				F576FDA324EFC81500CA90BB /* FooterCollectionReusableView.swift in Sources */,
 				F57BF06E24ECC39100BED6E1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
