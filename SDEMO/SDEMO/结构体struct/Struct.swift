@@ -7,3 +7,12 @@
 //
 
 import Foundation
+
+struct Point {
+    var x: Int = 0
+    var y: Int = 0
+}
+ 
+//var p1 = Point(x: 1, y: 2)
+//var p2 = Point(x: 1)
+//var p3 = Point()

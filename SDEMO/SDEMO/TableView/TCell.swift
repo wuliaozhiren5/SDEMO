@@ -10,6 +10,8 @@ import UIKit
 
 class TCell: UITableViewCell {
     
+    var person : Person?
+    
     lazy var firstNameLabel: UILabel = {
         let label = UILabel.init(frame: CGRect(x: 0, y: 0, width: 200, height: 50))
         label.text = ""
@@ -37,7 +39,7 @@ class TCell: UITableViewCell {
     lazy var avatarImageView: UIImageView = {
         let imageView = UIImageView.init(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
         imageView.contentMode = .scaleAspectFit;
-        imageView.image = UIImage(named: "ic_liveroom_addpeople")
+//        imageView.image = UIImage(named: "ic_liveroom_addpeople")
         return imageView
     }()
     
@@ -83,6 +85,7 @@ class TCell: UITableViewCell {
             make.top.equalTo(avatarImageView.snp.top)
             make.height.equalTo(25)
         }
+        
         lastNameLabel.snp.makeConstraints { (make) in
             make.leading.equalTo(avatarImageView.snp.trailing).offset(10)
             make.trailing.lessThanOrEqualTo(ageLabel.snp.leading).offset(-10)
@@ -94,5 +97,21 @@ class TCell: UITableViewCell {
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    //    //数据填充
+    //    func fillViewWithData(data:Any) {
+    //    }
+    
+    //数据填充
+    func fillViewWithData(data: Person) {
+        person = data; 
+        if let temp = person {
+            avatarImageView.image = UIImage(named: "ic_liveroom_addpeople")
+            firstNameLabel.text = temp.firstName
+            lastNameLabel.text = temp.lastName
+            ageLabel.text = "\(temp.age)"
+        }
+        
     }
 }

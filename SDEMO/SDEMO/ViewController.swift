@@ -23,6 +23,12 @@ class ViewController: UIViewController {
         //                 make.size.equalTo(CGSize(width: 100, height: 100))
         //             }
         
+        let dictionary1 = ["key1": 888, "key2": 999]
+        let dictionary2: [String: Int] = ["key1": 888, "key2": 999]
+        
+//        var dictionary: [String:Int] = [:]
+//        var dictionary1 = ["key1": 55, "key2": 555]
+//        var dictionary2 = Dictionary<String, Int>()
     }
  
 

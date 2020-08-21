@@ -1,21 +1,19 @@
 //
-//  CVC.swift
+//  VerticalCVC.swift
 //  SDEMO
 //
-//  Created by rrtv on 2020/8/20.
+//  Created by rrtv on 2020/8/21.
 //  Copyright © 2020 tv. All rights reserved.
 //
 
 import UIKit
 
-class CVC: UIViewController {
+class VerticalCVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        self.view.backgroundColor = UIColor.white
-
     }
     
 
@@ -30,5 +28,3 @@ class CVC: UIViewController {
     */
 
 }
-//Vertical   垂直位置
-//Horizontal 水平位置

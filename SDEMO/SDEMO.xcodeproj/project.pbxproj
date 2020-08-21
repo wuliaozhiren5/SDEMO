@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		BB0D3281C513C23F3423927E /* Pods_SDEMO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E46150A96E68431E6F5CE2CA /* Pods_SDEMO.framework */; };
+		F55819DA24EFB37B001F1C25 /* 字典.md in Resources */ = {isa = PBXBuildFile; fileRef = F55819D924EFB37B001F1C25 /* 字典.md */; };
+		F55819DC24EFB4D0001F1C25 /* 字符串.md in Resources */ = {isa = PBXBuildFile; fileRef = F55819DB24EFB4D0001F1C25 /* 字符串.md */; };
+		F55819E024EFB7C5001F1C25 /* HorizontalCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55819DF24EFB7C5001F1C25 /* HorizontalCVC.swift */; };
+		F55819E224EFB7E2001F1C25 /* VerticalCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55819E124EFB7E2001F1C25 /* VerticalCVC.swift */; };
 		F57BF06C24ECC39100BED6E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57BF06B24ECC39100BED6E1 /* AppDelegate.swift */; };
 		F57BF06E24ECC39100BED6E1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57BF06D24ECC39100BED6E1 /* SceneDelegate.swift */; };
 		F57BF07024ECC39100BED6E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57BF06F24ECC39100BED6E1 /* ViewController.swift */; };
@@ -49,6 +53,10 @@
 /* Begin PBXFileReference section */
 		C9F29AE68130F01485959073 /* Pods-SDEMO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDEMO.release.xcconfig"; path = "Target Support Files/Pods-SDEMO/Pods-SDEMO.release.xcconfig"; sourceTree = "<group>"; };
 		E46150A96E68431E6F5CE2CA /* Pods_SDEMO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDEMO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F55819D924EFB37B001F1C25 /* 字典.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "字典.md"; sourceTree = "<group>"; };
+		F55819DB24EFB4D0001F1C25 /* 字符串.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "字符串.md"; sourceTree = "<group>"; };
+		F55819DF24EFB7C5001F1C25 /* HorizontalCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalCVC.swift; sourceTree = "<group>"; };
+		F55819E124EFB7E2001F1C25 /* VerticalCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalCVC.swift; sourceTree = "<group>"; };
 		F57BF06824ECC39100BED6E1 /* SDEMO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDEMO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F57BF06B24ECC39100BED6E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F57BF06D24ECC39100BED6E1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -118,6 +126,22 @@
 				C9F29AE68130F01485959073 /* Pods-SDEMO.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		F55819DD24EFB736001F1C25 /* 水平 */ = {
+			isa = PBXGroup;
+			children = (
+				F55819DF24EFB7C5001F1C25 /* HorizontalCVC.swift */,
+			);
+			path = "水平";
+			sourceTree = "<group>";
+		};
+		F55819DE24EFB78E001F1C25 /* 垂直 */ = {
+			isa = PBXGroup;
+			children = (
+				F55819E124EFB7E2001F1C25 /* VerticalCVC.swift */,
+			);
+			path = "垂直";
 			sourceTree = "<group>";
 		};
 		F57BF05F24ECC39100BED6E1 = {
@@ -193,6 +217,8 @@
 		F57BF0A524ED555600BED6E1 /* CollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				F55819DE24EFB78E001F1C25 /* 垂直 */,
+				F55819DD24EFB736001F1C25 /* 水平 */,
 				F5ECE54724EE5F44008A5D11 /* CVC.swift */,
 				F5ECE54B24EE6156008A5D11 /* CCell.swift */,
 			);
@@ -204,6 +230,8 @@
 			children = (
 				F5ECE54024EE5B1B008A5D11 /* 变量常量.md */,
 				F5A5339724EEA4AD003D0EAB /* 数组.md */,
+				F55819D924EFB37B001F1C25 /* 字典.md */,
+				F55819DB24EFB4D0001F1C25 /* 字符串.md */,
 			);
 			path = "基本类型";
 			sourceTree = "<group>";
@@ -350,6 +378,8 @@
 				F5A5339824EEA4AD003D0EAB /* 数组.md in Resources */,
 				F5ECE54124EE5B1B008A5D11 /* 变量常量.md in Resources */,
 				F57BF07824ECC39100BED6E1 /* LaunchScreen.storyboard in Resources */,
+				F55819DA24EFB37B001F1C25 /* 字典.md in Resources */,
+				F55819DC24EFB4D0001F1C25 /* 字符串.md in Resources */,
 				F57BF07524ECC39100BED6E1 /* Assets.xcassets in Resources */,
 				F57BF07324ECC39100BED6E1 /* Main.storyboard in Resources */,
 			);
@@ -424,8 +454,10 @@
 				F5ECE54324EE5BE7008A5D11 /* ComomControlVC.swift in Sources */,
 				F57BF07024ECC39100BED6E1 /* ViewController.swift in Sources */,
 				F5A5339A24EEA555003D0EAB /* Struct.swift in Sources */,
+				F55819E224EFB7E2001F1C25 /* VerticalCVC.swift in Sources */,
 				F5ECE55524EE8295008A5D11 /* Enum.swift in Sources */,
 				F5ECE55124EE776F008A5D11 /* Person.swift in Sources */,
+				F55819E024EFB7C5001F1C25 /* HorizontalCVC.swift in Sources */,
 				F5ECE54824EE5F44008A5D11 /* CVC.swift in Sources */,
 				F57BF06C24ECC39100BED6E1 /* AppDelegate.swift in Sources */,
 				F5ECE54624EE5F35008A5D11 /* TVC.swift in Sources */,

@@ -14,10 +14,21 @@ class Person {
     var age: Int = 0
     var type: Season = .Spring
     
+    init() {
+    }
+    
     init(firstName: String, lastName: String, age: Int, type: Season) {
         self.firstName = firstName
         self.lastName = lastName
         self.age = age
         self.type = type
     }
+}
+
+class Person1 {
+    var firstName: String = ""
+    var lastName: String = ""
+    var age: Int = 0
+    var type: Season = .Spring
+    
 }
