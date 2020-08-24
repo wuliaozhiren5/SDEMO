@@ -13,22 +13,26 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-//        self.view.addSubview(lazyLabel);
+        //        self.view.addSubview(lazyLabel);
+        
+        
+        var csStr: String!
+        print("\(csStr)")
         
         //关闭导航栏半透明效果
         self.navigationController?.navigationBar.isTranslucent = false
         self.view.addSubview(lazyButton);
-//        self.view.addSubview(lazyImageView);
-   
+        //        self.view.addSubview(lazyImageView);
+        
         
         //        btn.snp.makeConstraints { (make) in
         //                 make.center.equalTo(self.view)
         //                 make.size.equalTo(CGSize(width: 100, height: 100))
         //             }
     }
- 
-
-     
+    
+    
+    
     //懒加载lazy
     lazy var lazyLabel: UILabel = {
         let label = UILabel.init(frame: CGRect(x: 0, y: 100, width: 200, height: 50))
@@ -86,32 +90,48 @@ class ViewController: UIViewController {
         btn.imageEdgeInsets = UIEdgeInsets.init(top: 0, left: 10, bottom: 0, right: 0)
         
         //点击
-//        btn.addTarget(self, action: #selector(buttonClick1), for: .touchUpInside)
+        //        btn.addTarget(self, action: #selector(buttonClick1), for: .touchUpInside)
         btn.addTarget(self, action: #selector(buttonClick2(button01:)), for: .touchUpInside)
         //btn.addTarget(self, action: #selector(switchTypeAction), for: .touchUpInside)
         
         return btn
     }()
- 
+    
     //    @objc func switchTypeAction(_ sender:UIButton?) {
     //        print("btn");
     //    }
     
-//    @objc func buttonClick1 ()  {
-//        print("你点击了我这个按钮方法buttonClick1");
-//    }
+    //    @objc func buttonClick1 ()  {
+    //        print("你点击了我这个按钮方法buttonClick1");
+    //    }
     
     @objc func buttonClick2 (button01:UIButton) {
-//        let vc : ComomControlVC = ComomControlVC()
-//        let vc : TVC = TVC()
-//        let vc : VerticalCVC = VerticalCVC()
-        let vc : HorizontalCVC = HorizontalCVC()
-
+        //        let vc : ComomControlVC = ComomControlVC()
+        //        let vc : TVC = TVC()
+        //        let vc : VerticalCVC = VerticalCVC()
+        //        let vc : HorizontalCVC = HorizontalCVC()
+        let vc:ClosureVC = ClosureVC()
+        vc.closure = { (str) -> () in
+            print( str + "Closure okokokokokokokokokokokok")
+        }
+        vc.combine1(num: 2020) { (text, text1) -> (Void) in
+            print("\(text) \(text1)")
+        }
+        vc.combine2 { (text, text1) -> (Void) in
+            print("\(text) \(text1)")
+        }
+        vc.combine3 { (text) -> (Void) in
+            print("\(text)")
+        }
+        
+        //        //必包强引用
+        //        let vc:TestClosureVC = TestClosureVC()
+         
+        
         self.navigationController?.pushViewController(vc, animated: true)
-
         print("你点击了我这个按钮方法buttonClick2(buttonMy:)");
     }
 }
 
 
- 
+

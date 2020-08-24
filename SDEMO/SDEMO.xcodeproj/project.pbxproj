@@ -25,6 +25,8 @@
 		F5A5339824EEA4AD003D0EAB /* 数组.md in Resources */ = {isa = PBXBuildFile; fileRef = F5A5339724EEA4AD003D0EAB /* 数组.md */; };
 		F5A5339A24EEA555003D0EAB /* Struct.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A5339924EEA555003D0EAB /* Struct.swift */; };
 		F5A5339C24EEA5DE003D0EAB /* Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A5339B24EEA5DE003D0EAB /* Class.swift */; };
+		F5BB575F24F36932006572FC /* ClosureVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BB575E24F36932006572FC /* ClosureVC.swift */; };
+		F5BB576124F395CC006572FC /* TestClosureVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BB576024F395CC006572FC /* TestClosureVC.swift */; };
 		F5ECE54124EE5B1B008A5D11 /* 变量常量.md in Resources */ = {isa = PBXBuildFile; fileRef = F5ECE54024EE5B1B008A5D11 /* 变量常量.md */; };
 		F5ECE54324EE5BE7008A5D11 /* ComomControlVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5ECE54224EE5BE7008A5D11 /* ComomControlVC.swift */; };
 		F5ECE54624EE5F35008A5D11 /* TVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5ECE54524EE5F35008A5D11 /* TVC.swift */; };
@@ -78,6 +80,8 @@
 		F5A5339724EEA4AD003D0EAB /* 数组.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "数组.md"; sourceTree = "<group>"; };
 		F5A5339924EEA555003D0EAB /* Struct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Struct.swift; sourceTree = "<group>"; };
 		F5A5339B24EEA5DE003D0EAB /* Class.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Class.swift; sourceTree = "<group>"; };
+		F5BB575E24F36932006572FC /* ClosureVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosureVC.swift; sourceTree = "<group>"; };
+		F5BB576024F395CC006572FC /* TestClosureVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestClosureVC.swift; sourceTree = "<group>"; };
 		F5ECE54024EE5B1B008A5D11 /* 变量常量.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "变量常量.md"; sourceTree = "<group>"; };
 		F5ECE54224EE5BE7008A5D11 /* ComomControlVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComomControlVC.swift; sourceTree = "<group>"; };
 		F5ECE54524EE5F35008A5D11 /* TVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVC.swift; sourceTree = "<group>"; };
@@ -183,6 +187,8 @@
 				F57BF06B24ECC39100BED6E1 /* AppDelegate.swift */,
 				F57BF06D24ECC39100BED6E1 /* SceneDelegate.swift */,
 				F57BF06F24ECC39100BED6E1 /* ViewController.swift */,
+				F5BB575E24F36932006572FC /* ClosureVC.swift */,
+				F5BB576024F395CC006572FC /* TestClosureVC.swift */,
 				F57BF07124ECC39100BED6E1 /* Main.storyboard */,
 				F57BF07424ECC39100BED6E1 /* Assets.xcassets */,
 				F57BF07624ECC39100BED6E1 /* LaunchScreen.storyboard */,
@@ -455,6 +461,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5A5339C24EEA5DE003D0EAB /* Class.swift in Sources */,
+				F5BB575F24F36932006572FC /* ClosureVC.swift in Sources */,
 				F5ECE54A24EE613F008A5D11 /* TCell.swift in Sources */,
 				F5ECE54C24EE6156008A5D11 /* CCell.swift in Sources */,
 				F5ECE54324EE5BE7008A5D11 /* ComomControlVC.swift in Sources */,
@@ -465,6 +472,7 @@
 				F5ECE55124EE776F008A5D11 /* Person.swift in Sources */,
 				F55819E024EFB7C5001F1C25 /* HorizontalCVC.swift in Sources */,
 				F5ECE54824EE5F44008A5D11 /* CVC.swift in Sources */,
+				F5BB576124F395CC006572FC /* TestClosureVC.swift in Sources */,
 				F57BF06C24ECC39100BED6E1 /* AppDelegate.swift in Sources */,
 				F5ECE54624EE5F35008A5D11 /* TVC.swift in Sources */,
 				F576FDA124EFC80700CA90BB /* HeaderCollectionReusableView.swift in Sources */,
