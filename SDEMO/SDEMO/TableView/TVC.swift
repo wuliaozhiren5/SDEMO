@@ -63,6 +63,7 @@ class TVC: UIViewController {
         //UI
         //关闭导航栏半透明效果
         self.navigationController?.navigationBar.isTranslucent = false
+        self.view.backgroundColor = UIColor.white
         self.view.addSubview(tableView)
         tableView.snp.makeConstraints { (make) in
             make.edges.equalTo(self.view)

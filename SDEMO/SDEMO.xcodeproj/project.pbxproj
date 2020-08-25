@@ -27,6 +27,10 @@
 		F5A5339C24EEA5DE003D0EAB /* Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A5339B24EEA5DE003D0EAB /* Class.swift */; };
 		F5BB575F24F36932006572FC /* ClosureVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BB575E24F36932006572FC /* ClosureVC.swift */; };
 		F5BB576124F395CC006572FC /* TestClosureVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BB576024F395CC006572FC /* TestClosureVC.swift */; };
+		F5BB576624F3AA98006572FC /* NotificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BB576224F3AA96006572FC /* NotificationVC.swift */; };
+		F5BB576724F3AA98006572FC /* Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BB576324F3AA96006572FC /* Delegate.swift */; };
+		F5BB576824F3AA98006572FC /* DelegateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BB576424F3AA97006572FC /* DelegateVC.swift */; };
+		F5BB576924F3AA98006572FC /* ValueVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BB576524F3AA98006572FC /* ValueVC.swift */; };
 		F5ECE54124EE5B1B008A5D11 /* 变量常量.md in Resources */ = {isa = PBXBuildFile; fileRef = F5ECE54024EE5B1B008A5D11 /* 变量常量.md */; };
 		F5ECE54324EE5BE7008A5D11 /* ComomControlVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5ECE54224EE5BE7008A5D11 /* ComomControlVC.swift */; };
 		F5ECE54624EE5F35008A5D11 /* TVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5ECE54524EE5F35008A5D11 /* TVC.swift */; };
@@ -82,6 +86,10 @@
 		F5A5339B24EEA5DE003D0EAB /* Class.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Class.swift; sourceTree = "<group>"; };
 		F5BB575E24F36932006572FC /* ClosureVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosureVC.swift; sourceTree = "<group>"; };
 		F5BB576024F395CC006572FC /* TestClosureVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestClosureVC.swift; sourceTree = "<group>"; };
+		F5BB576224F3AA96006572FC /* NotificationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationVC.swift; sourceTree = "<group>"; };
+		F5BB576324F3AA96006572FC /* Delegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Delegate.swift; sourceTree = "<group>"; };
+		F5BB576424F3AA97006572FC /* DelegateVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DelegateVC.swift; sourceTree = "<group>"; };
+		F5BB576524F3AA98006572FC /* ValueVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValueVC.swift; sourceTree = "<group>"; };
 		F5ECE54024EE5B1B008A5D11 /* 变量常量.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "变量常量.md"; sourceTree = "<group>"; };
 		F5ECE54224EE5BE7008A5D11 /* ComomControlVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComomControlVC.swift; sourceTree = "<group>"; };
 		F5ECE54524EE5F35008A5D11 /* TVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVC.swift; sourceTree = "<group>"; };
@@ -177,6 +185,7 @@
 		F57BF06A24ECC39100BED6E1 /* SDEMO */ = {
 			isa = PBXGroup;
 			children = (
+				F5BB576A24F3AB0F006572FC /* 传值 */,
 				F5ECE54F24EE770A008A5D11 /* 枚举enum */,
 				F5ECE54E24EE7703008A5D11 /* 结构体struct */,
 				F5ECE54D24EE7701008A5D11 /* 类class */,
@@ -187,8 +196,6 @@
 				F57BF06B24ECC39100BED6E1 /* AppDelegate.swift */,
 				F57BF06D24ECC39100BED6E1 /* SceneDelegate.swift */,
 				F57BF06F24ECC39100BED6E1 /* ViewController.swift */,
-				F5BB575E24F36932006572FC /* ClosureVC.swift */,
-				F5BB576024F395CC006572FC /* TestClosureVC.swift */,
 				F57BF07124ECC39100BED6E1 /* Main.storyboard */,
 				F57BF07424ECC39100BED6E1 /* Assets.xcassets */,
 				F57BF07624ECC39100BED6E1 /* LaunchScreen.storyboard */,
@@ -235,6 +242,19 @@
 				F576FDA224EFC81500CA90BB /* FooterCollectionReusableView.swift */,
 			);
 			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		F5BB576A24F3AB0F006572FC /* 传值 */ = {
+			isa = PBXGroup;
+			children = (
+				F5BB575E24F36932006572FC /* ClosureVC.swift */,
+				F5BB576024F395CC006572FC /* TestClosureVC.swift */,
+				F5BB576324F3AA96006572FC /* Delegate.swift */,
+				F5BB576424F3AA97006572FC /* DelegateVC.swift */,
+				F5BB576224F3AA96006572FC /* NotificationVC.swift */,
+				F5BB576524F3AA98006572FC /* ValueVC.swift */,
+			);
+			path = "传值";
 			sourceTree = "<group>";
 		};
 		F5ECE53D24EE5A65008A5D11 /* 基本类型 */ = {
@@ -464,7 +484,9 @@
 				F5BB575F24F36932006572FC /* ClosureVC.swift in Sources */,
 				F5ECE54A24EE613F008A5D11 /* TCell.swift in Sources */,
 				F5ECE54C24EE6156008A5D11 /* CCell.swift in Sources */,
+				F5BB576924F3AA98006572FC /* ValueVC.swift in Sources */,
 				F5ECE54324EE5BE7008A5D11 /* ComomControlVC.swift in Sources */,
+				F5BB576624F3AA98006572FC /* NotificationVC.swift in Sources */,
 				F57BF07024ECC39100BED6E1 /* ViewController.swift in Sources */,
 				F5A5339A24EEA555003D0EAB /* Struct.swift in Sources */,
 				F55819E224EFB7E2001F1C25 /* VerticalCVC.swift in Sources */,
@@ -472,9 +494,11 @@
 				F5ECE55124EE776F008A5D11 /* Person.swift in Sources */,
 				F55819E024EFB7C5001F1C25 /* HorizontalCVC.swift in Sources */,
 				F5ECE54824EE5F44008A5D11 /* CVC.swift in Sources */,
+				F5BB576824F3AA98006572FC /* DelegateVC.swift in Sources */,
 				F5BB576124F395CC006572FC /* TestClosureVC.swift in Sources */,
 				F57BF06C24ECC39100BED6E1 /* AppDelegate.swift in Sources */,
 				F5ECE54624EE5F35008A5D11 /* TVC.swift in Sources */,
+				F5BB576724F3AA98006572FC /* Delegate.swift in Sources */,
 				F576FDA124EFC80700CA90BB /* HeaderCollectionReusableView.swift in Sources */,
 				F576FDA324EFC81500CA90BB /* FooterCollectionReusableView.swift in Sources */,
 				F57BF06E24ECC39100BED6E1 /* SceneDelegate.swift in Sources */,

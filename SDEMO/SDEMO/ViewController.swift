@@ -21,6 +21,7 @@ class ViewController: UIViewController {
         
         //关闭导航栏半透明效果
         self.navigationController?.navigationBar.isTranslucent = false
+        self.view.backgroundColor = UIColor.white
         self.view.addSubview(lazyButton);
         //        self.view.addSubview(lazyImageView);
         
@@ -110,20 +111,11 @@ class ViewController: UIViewController {
         //        let vc : TVC = TVC()
         //        let vc : VerticalCVC = VerticalCVC()
         //        let vc : HorizontalCVC = HorizontalCVC()
-        let vc:ClosureVC = ClosureVC()
-        vc.closure = { (str) -> () in
-            print( str + "Closure okokokokokokokokokokokok")
-        }
-        vc.combine1(num: 2020) { (text, text1) -> (Void) in
-            print("\(text) \(text1)")
-        }
-        vc.combine2 { (text, text1) -> (Void) in
-            print("\(text) \(text1)")
-        }
-        vc.combine3 { (text) -> (Void) in
-            print("\(text)")
-        }
+          let vc : ValueVC = ValueVC()
+
         
+        
+
         //        //必包强引用
         //        let vc:TestClosureVC = TestClosureVC()
          
