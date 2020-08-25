@@ -13,7 +13,8 @@ class Person {
     var lastName: String = ""
     var age: Int = 0
     var type: Season = .Spring
-    
+    var isFollow: Bool = false
+
     init() {
     }
     

@@ -108,13 +108,10 @@ class ViewController: UIViewController {
     
     @objc func buttonClick2 (button01:UIButton) {
         //        let vc : ComomControlVC = ComomControlVC()
-        //        let vc : TVC = TVC()
+                let vc : TVC = TVC()
         //        let vc : VerticalCVC = VerticalCVC()
         //        let vc : HorizontalCVC = HorizontalCVC()
-          let vc : ValueVC = ValueVC()
-
-        
-        
+//          let vc : ValueVC = ValueVC()
 
         //        //必包强引用
         //        let vc:TestClosureVC = TestClosureVC()

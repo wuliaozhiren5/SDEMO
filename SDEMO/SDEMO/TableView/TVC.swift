@@ -185,6 +185,7 @@ extension TVC: UITableViewDataSource {
         
         if let temp = person {
             cell.fillViewWithData(data: temp)
+            cell.delegate = self
         } else {
         }
         return cell
@@ -197,6 +198,15 @@ extension TVC: UITableViewDataSource {
         let index = indexPath.row
         data.remove(at: index)
         self.tableView.deleteRows(at: [indexPath], with: .top)
+    }
+    
+}
+
+extension TVC: TCellDelegate{
+    
+    func follow(cell: TCell, person: Person) {
+        person.isFollow = !person.isFollow
+        tableView.reloadData()
     }
     
 }

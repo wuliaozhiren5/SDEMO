@@ -30,5 +30,3 @@ class CVC: UIViewController {
     */
 
 }
-//Vertical   垂直位置
-//Horizontal 水平位置
