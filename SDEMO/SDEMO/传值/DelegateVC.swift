@@ -41,10 +41,13 @@ class DelegateVC: UIViewController {
         if self.delegate != nil && (self.delegate?.responds(to: #selector(passValueDelegate.passValue(text1: text2:))))! {
             self.delegate?.passValue(text1: "delegate", text2: "123")
         }
+        
         if self.delegate != nil {
             self.delegate?.passValue(text: "delegate")
         }
-        
+        if self.delegate != nil {
+            self.delegate?.optionalPassValue?(text: "optionalPassValue")
+        }
         
         self.navigationController?.popViewController(animated: true)
     }

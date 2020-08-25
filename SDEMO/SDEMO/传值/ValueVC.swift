@@ -169,6 +169,13 @@ extension ValueVC: passValueDelegate {
         
     }
     
+    
+    func optionalPassValue(text: String) {
+        
+        print( text + "---" + "可选协议");
+
+    }
+    
 }
 
 
